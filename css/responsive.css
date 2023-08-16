@@ -54,4 +54,8 @@
         flex: unset;
         height: 70%;
     }
+    .success-alert {
+        width: 70%;
+        padding: 10px;
+    }
 }
