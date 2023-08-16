@@ -1,0 +1,20 @@
+.success:checked ~ .content *
+{
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.success:checked ~ .success-alert {
+    display: block;
+    transition: display .5s ease-in-out .5s;
+}
+
+.success:not(:checked) ~ .content * {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.success:not(:checked) ~ .success-alert {
+    display: none;
+    transition: display .5s ease-in-out .5s;
+}
